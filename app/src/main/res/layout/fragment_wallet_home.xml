@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.WalletHome">
+
+    <TextView
+        android:id="@+id/greetingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/good_evening"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vince"
+        android:layout_below="@+id/greetingTextView"
+        android:textSize="16sp"
+        android:textColor="@color/forestGreen"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"/>
+
+
+    <TextView
+        android:id="@+id/overviewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/overview"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/transactButton"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/transactButton"
+        android:layout_width="150dp"
+        android:layout_marginStart="237dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/greetingTextView"
+        android:textSize="16sp"
+        android:background="@drawable/button_shape"
+        android:text="@string/transact"
+        android:textColor="@color/white"
+        android:focusable="true"
+        android:clickable="true"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/walletBalanceCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="8dp"
+        android:layout_below="@+id/overviewText"
+        android:background="@drawable/shape_button2"
+        app:strokeColor="@color/forestGreen"
+        app:strokeWidth="0.5dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/productText"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/product_purchase_details"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ksh"
+                android:textColor="@color/forestGreen"
+                android:layout_marginTop="68dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif"
+                android:layout_marginStart="25dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ksh"
+                android:textColor="@color/forestGreen"
+                android:layout_marginTop="68dp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif"
+                android:layout_marginStart="120dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_0"
+                android:textColor="@color/forestGreen"
+                android:layout_marginTop="95dp"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginStart="25dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_0"
+                android:textColor="@color/forestGreen"
+                android:layout_marginTop="95dp"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginStart="120dp"
+                />
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/purchase_amount"
+                android:textColor="@color/black"
+                android:layout_marginTop="125dp"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginStart="25dp"
+                />
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/payment_progress"
+                android:textColor="@color/black"
+                android:layout_marginTop="125dp"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginStart="120dp"
+                />
+            <TextView
+                android:id="@+id/walletBalanceText"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginStart="225dp"
+                android:text="@string/wallet_balance"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ksh"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textColor="@color/forestGreen"
+                android:layout_marginTop="90dp"
+                android:textSize="17sp"
+                android:fontFamily="sans-serif"
+                android:layout_marginStart="225dp"
+                />
+            <TextView
+                android:id="@+id/balanceDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/forestGreen"
+                android:layout_marginTop="115dp"
+                android:text="@string/_0_0"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginStart="225dp"
+                />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/operationsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/operations"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@+id/walletBalanceCardView"
+        android:layout_margin="10dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/operationLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_below="@+id/operationsText">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/withdrawMoneyCardView"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="15dp"
+                android:layout_margin="10dp"
+                app:strokeColor="@color/forestGreen"
+                app:strokeWidth="0.9dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:src="@drawable/withdraw"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/withdraw_money"
+                        android:gravity="center"
+                        android:textSize="16.5sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/sendToBankCardView"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="15dp"
+                android:layout_margin="10dp"
+                app:strokeColor="@color/forestGreen"
+                app:strokeWidth="0.9dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:src="@drawable/bank"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/send_to_bank"
+                        android:textSize="16.59sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/walletToWalletCardView"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="15dp"
+                android:layout_margin="10dp"
+                app:strokeColor="@color/forestGreen"
+                app:strokeWidth="0.9dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:src="@drawable/wallet_to_wallet"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wallet_to_wallet"
+                        android:gravity="center"
+                        android:textSize="16.5sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/operationsLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/operationLayout1">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/sendToCryptoCardView"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="15dp"
+            android:layout_margin="10dp"
+            app:strokeColor="@color/forestGreen"
+            app:strokeWidth="0.9dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:src="@drawable/cryptocurrency"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/send_to_crypto"
+                    android:textSize="16.59sp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/withdrawFromCryptoCardView"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="15dp"
+            android:layout_margin="10dp"
+            app:strokeColor="@color/forestGreen"
+            app:strokeWidth="0.9dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:src="@drawable/cryptocurrency"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/withdraw_from_crypto"
+                    android:textSize="16.59sp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/shape2"/>
+            <TextView
+                android:id="@+id/slogan"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/ukulima_bora"
+                android:textColor="@color/white"
+                android:background="@drawable/shape3"
+                android:layout_marginTop="85dp"
+                android:textSize="18sp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/greetingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Good Evening"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/greetingName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Allan"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_below="@+id/greetingText"
+                android:layout_marginStart="10dp"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/mans"
+                android:layout_below="@+id/greetingName"
+                android:layout_marginStart="5dp"
+                />
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today Date"
+                android:textSize="15sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="100dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nairobi"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:padding="2dp"
+                android:layout_below="@+id/date"
+                android:layout_marginStart="100dp"
+                app:drawableStartCompat="@drawable/field_view" />
+            <TextView
+                android:id="@+id/temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21°C"
+                android:textColor="@color/orangeRed"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_below="@id/date"
+                android:layout_marginStart="180dp"
+                app:drawableStartCompat="@drawable/temp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/menuButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/corn"
+                android:layout_marginStart="300dp"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/notification"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/notification"
+                android:layout_marginTop="55dp"
+                android:layout_marginStart="300dp"
+                />
+            <TextView
+                android:id="@+id/menuText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:fontFamily="times"
+                android:layout_marginStart="300dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="30dp"
+                />
+
+            <TextView
+                android:id="@+id/manageYourFarmText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="times"
+                android:text="@string/manage_your_farm"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/manageYourFarmText"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/myFarm"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/farm"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/my_farm"
+                        android:textStyle="bold"
+                        android:fontFamily="times"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/crops"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/carrot"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/crops"
+                        android:textStyle="bold"
+                        android:fontFamily="times"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/livestock"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/cow"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/livestock"
+                        android:textStyle="bold"
+                        android:fontFamily="times"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/linearLayout1"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/harvesting"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/wheat_harvest"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/harvesting"
+                        android:textStyle="bold"
+                        android:fontFamily="times"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/farmHireEquipment"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/farm_equipment"/>
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/farm_hire_equipment"
+                        android:textStyle="bold"
+                        android:fontFamily="times"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/farmInputs"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/sack"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/farm_inputs"
+                        android:textStyle="bold"
+                        android:fontFamily="times"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/linearLayout2"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/financing"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/financing"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/financing"
+                        android:textStyle="bold"
+                        android:fontFamily="times"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/educationCorner"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/mans"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/edu_corner"
+                        android:textStyle="bold"
+                        android:fontFamily="times"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/addWallet"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/wallet"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Load Wallet"
+                        android:textStyle="bold"
+                        android:fontFamily="times"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lookUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout3"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/look_up"
+                android:fontFamily="times"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/soilPreparation"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/soil_preparation"
+                android:layout_below="@+id/lookUp"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:fontFamily="times"
+                android:background="@drawable/shape3"
+                android:textStyle="bold"
+                app:drawableStartCompat="@drawable/grass" />
+            <TextView
+                android:id="@+id/watering"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/watering"
+                android:layout_below="@+id/lookUp"
+                android:layout_marginStart="210dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:fontFamily="times"
+                android:background="@drawable/shape3"
+                android:textStyle="bold"
+                app:drawableStartCompat="@drawable/watering" />
+
+            <TextView
+                android:id="@+id/fertilizers"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/soilPreparation"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/shape3"
+                android:fontFamily="times"
+                android:text="@string/fertilizers"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:drawableStartCompat="@drawable/fertilizer" />
+            <TextView
+                android:id="@+id/diseases"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/diseases"
+                android:layout_below="@+id/soilPreparation"
+                android:textColor="@color/white"
+                android:fontFamily="times"
+                android:gravity="center"
+                android:background="@drawable/shape3"
+                android:textStyle="bold"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="20dp"
+                app:drawableStartCompat="@drawable/disease" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
